@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Ensure the element exists before accessing it.
+    //Using DOMContentLoaded event to wait for the complete loading of the DOM.
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log(document.getElementById('myDiv').innerHTML);
+        document.getElementById('myDiv').innerHTML = "<p>This is now correct.</p>";
+    });
+  </script>
+</body>
+</html>
