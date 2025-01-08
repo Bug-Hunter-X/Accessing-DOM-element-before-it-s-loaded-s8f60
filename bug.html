@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // This script attempts to access a non-existent element
+    // before it's added to the DOM, causing an error
+    console.log(document.getElementById('myDiv').innerHTML); 
+
+    //Correct way to add element
+    document.getElementById('myDiv').innerHTML = "<p>This is now correct.</p>";
+  </script>
+</body>
+</html>
